@@ -79,7 +79,7 @@ project Gnat extends "specs.gpr" is
       for Switches ("raise-gcc.c") use ALL_CFLAGS & ("-fexceptions");
 
       --  TMPL is Preprocessor
-      for Driver ("TMPL") use "arm-none-eabi-cpp";
+      for Driver ("TMPL") use Target & "-cpp";
       for Leading_Required_Switches ("TMPL") use Required_TMPL_Flags;
 
       --  TMPL no makefile

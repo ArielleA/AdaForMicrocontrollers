@@ -42,7 +42,8 @@ abstract project Specs extends "scenarios.gpr" is
    -------------------------------------------------------------------------
 
    --  Set desired target
-   Target := "arm-none-eabi";
+   -- Target := "arm-none-eabi";
+   Target := "arm-linux-gnueabihf";
 
    --  Set profile & subprofile for runtime identification
    Profile    : Types.PROFILE_Type    := "zfp";
